@@ -7,37 +7,55 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Abel|Raleway:400,700,200' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="">
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.16/dist/jquery.flip.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
 </head>
-<body>
-	<div id="intro" class="wrap">
-		<h1 id="main">Welcome to the Dante Alighieri Quiz!</h1>
-		<h2>How much do you know about the "Father Of The Italian Language"?</h2>
-		<p>Dante was a famous poet from the Middle Ages who was known for his skill with words and for championing the vernacular over Latin. Let's see what you know about his writings!</p>
-		<button id="button">Start</button>
+<body class="bg1">
+	<div class="masthead">
+		<div id="intro">
+			<h1>Welcome to the Dante Alighieri Quiz!</h1>
+			<h2>How much do you know about the <br>"Father Of The Italian Language"?</h2>
+			<p>Dante was a famous poet from the Middle Ages who was known for his skill with words and for championing the vernacular over Latin. Let's see what you know about his writings!</p>
+			<button id="button">Start</button>
+		</div>
 	</div>
-	<div id="ques" class="wrap">
-	</div>
-	<div id="ans" class="wrap">
-
-	</div>
-	<div id="select" class="wrap">
-		<input type="radio" name="option" value="0" class="this"><span id="a" class="answer"></span><br>
-		<input type="radio" name="option" value="1" class="this"><span id="b" class="answer"></span><br>
-		<input type="radio" name="option" value="2" class="this"><span id="c" class="answer"></span><br>
-		<input type="radio" name="option" value="3" class="this"><span id="d" class="answer"></span><br>
-		<button id="submit">SUBMIT</button>
-		<!--button id="next">Start Over</button-->
+	<div class="card">
+		<div id="ques" class="wrap">
+		</div>
+		<div class="flip">
+			<div id="ans" class="wrap">
+			</div>
+			<span class="paint"></span>
+		</div>
+		<div id="select" class="wrap">
+			<div class="form">
+				<div class="each">
+					<input type="radio" name="option" value="0" class="this"><span id="a" class="answer"></span><br>
+				</div>
+				<div class="each">
+					<input type="radio" name="option" value="1" class="this"><span id="b" class="answer"></span><br>
+				</div>
+				<div class="each">
+					<input type="radio" name="option" value="2" class="this"><span id="c" class="answer"></span><br>
+				</div>
+				<div class="each">
+					<input type="radio" name="option" value="3" class="this"><span id="d" class="answer"></span><br>
+				</div>
+				<button id="submit">SUBMIT</button>
+			</div>
+			<p id="error">Whoops! Please select an answer first!</p>
+			<!--button id="next">Start Over</button-->
+		</div>
 	</div>
 	<div id="final" class="wrap">
+
 		<span id="results"></span>
 		<div>
 			<button id="next">Start Over</button>
 		</div>
 
 	</div>
-
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/velocity.ui.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
