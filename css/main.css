@@ -140,8 +140,8 @@ QUESTION/ANSWER
 	padding: 1em .5em 1.2em;
 	height: 250px;
 	width: 80%;
-	background-color: #f2e2cd;
-	background-image: url('../img/tapestry_pattern.png');
+	/*background-color: #f2e2cd;*/
+	background: linear-gradient(rgba(121, 77, 31, 0.45),rgba(121, 77, 31, 0.25)), url('../img/tapestry_pattern.png');
 	background-repeat: repeat;
 	box-shadow: 25px 25px 50px #999 inset;
 }
@@ -152,8 +152,8 @@ QUESTION/ANSWER
 }
 
 #next {
-	width: 20%;
-	height: 2em;
+	width: 30%;
+	padding: 0.5em;
 	margin-right: auto;
 	margin-left: auto;
 	border: none;
@@ -167,13 +167,13 @@ QUESTION/ANSWER
 }
 
 #submit{
-	float: left;
+	float:left;
 	border: none;
 	padding: 0.5em;
 	border-radius: 15px;
 	width: 33%;
-	margin-left: 33%;
-	margin-top: 20px;
+	margin-left: 30%;
+	margin-top: 30px;
 	color: #fff;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
@@ -193,7 +193,7 @@ QUESTION/ANSWER
 	background-image: url('../ing/beatrice.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 300px;
+	height: 500px;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -212,16 +212,25 @@ QUESTION/ANSWER
 }
 
 .this {
-	margin-left: 3em;
+	margin-left: 30%;
 	margin-top: 1.5em;
+}
+#error {
+	color: #e33d3d;
+	text-align: center;
+	margin-top: 5em;
 }
 
 
 /******************************************
 RESPONSIVE
 *******************************************/
-
+/*----TABLET----*/
 	@media screen and (min-width: 768px){
+
+		#intro {
+			margin-top: 5%;
+		}
 
 		body {
 			background-image: url('../img/dante-and-beatrice.png');
@@ -249,7 +258,6 @@ RESPONSIVE
 			vertical-align: middle;
 			text-align: center;
 			padding: 2em 0.3em;
-			color: #1c1b1f;
 		}
 
 		#submit {
@@ -260,6 +268,7 @@ RESPONSIVE
 
 		#select {
 			padding: 1em .5em 1.2em;
+			margin-right:
 		}
 		.answer {
 			font-size: 1.25em;
@@ -272,6 +281,10 @@ RESPONSIVE
 			height: inherit;
 			position: absolute;
 			margin-left: 5%;
+		}
+
+		.this {
+			margin-left: 35%;
 		}
 
 		.image {
@@ -310,25 +323,38 @@ RESPONSIVE
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		#error {
+			color: #e33d3d;
+			text-align: center;
+			margin-top: 2em;
+		}
 
 	}
-
-
+/*-----DESKTOP-----*/
 	@media screen and (min-width: 1024px){
 		.each {
 			margin-bottom: 0.5em;
 			display: inline-block;
 		}
 
+		.form{
+			margin-top: 3em;
+		}
+
 		#submit{
-			margin-bottom: 6em;
-			margin-right: 1em;
+			margin-bottom: 4.5em;
+			margin-right: 3em;
 			margin-top: .75em;
 		}
 
 		#ans {
 			font-size: 2em;
 		}
+
+		.this {
+			margin-left: 4em;
+		}
+
 
 		.image {
 			float: right;
@@ -342,6 +368,10 @@ RESPONSIVE
 			background-image: url('../img/dante-and-beatrice.png');
 			background-repeat: no-repeat;
 			background-size: cover;
+		}
+
+		#final {
+			height: 400px;
 		}
 
 }
